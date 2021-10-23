@@ -4,7 +4,8 @@
 #include "alu.h"
 #include "pc.h"
 #include "pccontroller.h"
-#include "qvector.h"
+
+#include <QVector>
 
 class CPU
 {
@@ -13,12 +14,12 @@ public:
     ~CPU();
     ALU * alu;
     PC * Pc;
-    PCController * PCc;
 
-    QVector<int> outAlu, outPC;
+    //QVector<int> outAlu;
+    QVector<int> outPC;
 
-    int registerD, registerA, outM, writeM, addressM, pc, inA, loadA, loadD, x, y, outAlu, zr, ng, jump;
-    void output(QVector<QVector<int>> * cpuOut, int inM, int instruction, int reset);
+    int registerD, registerA, outM, writeM, addressM, pc, inA, loadA, loadD, outAlu, x, y, zr, ng, jump;
+    QVector<QVector<int>> output(int inM, int instruction, int reset);
 };
 
 #endif // CPU_H

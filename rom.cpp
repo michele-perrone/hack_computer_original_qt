@@ -3,7 +3,7 @@
 
 ROM::ROM()
 {
-    rom = new int[Default::ROM_length];
+    rom = QVector<int>(Default::ROM_length);
 }
 
 int ROM::output(int address)
@@ -12,7 +12,7 @@ int ROM::output(int address)
     return rom[address];
 }
 
-void ROM::flash(int *rom)
+void ROM::flash(QVector<int> rom)
 {
     for(int i=0; i<sizeof(rom)/4; i++) {
       this->rom[i] = rom[i];
@@ -21,5 +21,5 @@ void ROM::flash(int *rom)
 
 void ROM::wipe()
 {
-    rom = new int[Default::ROM_length];
+    rom = QVector<int>(Default::ROM_length);
 }

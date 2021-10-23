@@ -1,10 +1,12 @@
 #ifndef DRAWER_H
 #define DRAWER_H
 
+#include "hackcomputer.h"
 
 #include <QThread>
-#include <qgraphicsscene.h>
-#include <hackcomputer.h>
+#include <QGraphicsScene>
+
+
 
 class Drawer : public QThread
 {

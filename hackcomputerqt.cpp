@@ -1,22 +1,29 @@
 #include "hackcomputerqt.h"
 #include "./ui_hackcomputerqt.h"
 
+#include <iostream>
+
 HackComputerQt::HackComputerQt(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::HackComputerQt)
 {
-
-    qDebug("I am alive");
-
+    // Prepare the GUI
     ui->setupUi(this);
-
     scene = new QGraphicsScene(this);
     ui->graphicsView->setScene(scene);
 
-    ticker = new Ticker();
+    // Prepare the simulator
+    hackComputer = new HackComputer();
+    hackComputer->preload("Pong");
+
+    // Create and start the threads
+    ticker = new Ticker(hackComputer);
     drawer = new Drawer(scene, hackComputer);
+
     ticker->start();
     drawer->start();
+
+    std::cout << "I am alive #1" << std::endl;
 }
 
 HackComputerQt::~HackComputerQt()

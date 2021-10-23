@@ -5,7 +5,7 @@ PC::PC()
     pc=0;
 }
 
-int * PC::output(int in, int reset, int load, int inc) {
+QVector<int> PC::output(int in, int reset, int load, int inc) {
     int oldOut = pc;
 
     if (reset==1) {
@@ -19,7 +19,7 @@ int * PC::output(int in, int reset, int load, int inc) {
       // qDebug("[PC] Increment");
     }
 
-    int * out = new int[] {
+    QVector<int> out = {
             oldOut,
             pc
     };

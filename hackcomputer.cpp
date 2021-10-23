@@ -1,6 +1,7 @@
 #include "hackcomputer.h"
-#include "qfile.h"
-#include "qtextstream.h"
+
+#include <QFile>
+#include <QTextStream>
 
 HackComputer::HackComputer()
 {
@@ -20,7 +21,7 @@ void HackComputer::cycle()
 {
     addressM = cpu->registerA;
     inM = ram->output(0, 0, addressM);
-    cpu->output(&cpuOut, inM, instruction, reset);
+    cpuOut = cpu->output(inM, instruction, reset);
     if(reset==1) reset=0;
     outM = cpuOut[1][0];
     writeM = cpuOut[1][1];
@@ -33,7 +34,11 @@ void HackComputer::cycle()
 void HackComputer::preload(QString programName)
 {
     QFile file("programs/" + programName + ".hack");
-    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) return;
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
+    {
+        std::cout << "Program file not found!" << std::endl;
+        exit(EXIT_FAILURE);
+    }
     QTextStream in(&file);
     for (int i=0; !in.atEnd(); i++) {
         int line = in.readLine().toInt(NULL, 2);
@@ -41,7 +46,7 @@ void HackComputer::preload(QString programName)
     }
 }
 
-void HackComputer::initializeRam(int *newRam)
+void HackComputer::initializeRam(QVector<int> newRam)
 {
     ram->load(newRam);
 }

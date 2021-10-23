@@ -6,7 +6,6 @@ CPU::CPU()
 {
     alu = new ALU();
     Pc = new PC();
-    PCc = new PCController();
     // Registers of the cpu
     registerD=0;
     registerA=0;
@@ -31,12 +30,12 @@ CPU::~CPU()
 {
     delete alu;
     delete Pc;
-    delete PCc;
 }
 
-void CPU::output(QVector<QVector<int>> * cpuOut, int inM, int instruction, int reset) {
+QVector<QVector<int>> CPU::output(int inM, int instruction, int reset)
+{
     //println(instruction.toString(2).padStart(16, "0"))
-    int oldState[] = {outM, writeM, addressM, pc, registerD};
+    QVector <int> oldState = {outM, writeM, addressM, pc, registerD};
 
     // Understand what is the instruction type
     Instruction * inst = new Instruction(instruction);
@@ -52,7 +51,7 @@ void CPU::output(QVector<QVector<int>> * cpuOut, int inM, int instruction, int r
 
     // ALU
     int onlyC = inst->a==1 ? inst->comp-(1<<6) : inst->comp;
-    int * outALU = alu->output(x, y, onlyC);
+    QVector<int> outALU = alu->output(x, y, onlyC);
     outAlu = outALU[0];
     zr = outALU[1];
     ng = outALU[2];
@@ -62,9 +61,9 @@ void CPU::output(QVector<QVector<int>> * cpuOut, int inM, int instruction, int r
     writeM = inst->opcode==1 ? inst->d3 : 0;
 
     // PC
-    int load = PCc->output(inst->opcode, zr, ng, inst->j1, inst->j2, inst->j3);
+    int load = PCController::output(inst->opcode, zr, ng, inst->j1, inst->j2, inst->j3);
     int inc = load==1 ? 0 : 1;
-    int * outPC = Pc->output(
+    QVector<int> outPC = Pc->output(
       addressM,
       reset,
       load,
@@ -84,8 +83,10 @@ void CPU::output(QVector<QVector<int>> * cpuOut, int inM, int instruction, int r
 
     delete inst;
 
-    int newState[] = {outM, writeM, addressM, pc, registerD};
+    QVector <int> newState = {outM, writeM, addressM, pc, registerD};
 
-    cpuOut = {oldState, newState};
+    QVector <QVector<int>> completeState = {oldState, newState};
+
+    return completeState;
 
 }
