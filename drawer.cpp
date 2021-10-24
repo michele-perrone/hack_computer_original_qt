@@ -28,5 +28,6 @@ void Drawer::draw()
       }
     }
 
-//    scene->addPixmap(QPixmap::fromImage(img));
+    emit pixmapUpdated(QPixmap::fromImage(img));
+    //scene->addPixmap(QPixmap::fromImage(img));
 }

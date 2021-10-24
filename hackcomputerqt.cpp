@@ -21,6 +21,9 @@ HackComputerQt::HackComputerQt(QWidget *parent)
     ticker = new Ticker(hackComputer);
     drawer = new Drawer(scene, hackComputer);
 
+    QObject::connect(drawer, &Drawer::pixmapUpdated,
+                     this, &HackComputerQt::updateScene);
+
     ticker->start();
     drawer->start();
 
@@ -35,3 +38,7 @@ HackComputerQt::~HackComputerQt()
 }
 
 
+void HackComputerQt::updateScene(QPixmap pixmap)
+{
+    scene->addPixmap(pixmap);
+}

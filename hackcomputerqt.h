@@ -23,6 +23,11 @@ class HackComputerQt : public QMainWindow
 public:
     HackComputerQt(QWidget *parent = nullptr);
     ~HackComputerQt();
+    static void simpleWait(uint32_t nanoSeconds);
+
+public slots:
+    void updateScene(QPixmap pixmap);
+
 private:
     Ui::HackComputerQt *ui;
     HackComputer * hackComputer;

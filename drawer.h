@@ -20,6 +20,9 @@ class Drawer : public QThread
         void draw();
         QGraphicsScene * scene;
         HackComputer * hackComputer;
+
+    signals:
+        void pixmapUpdated(QPixmap pixmap);
 };
 
 #endif // TICKER_H
