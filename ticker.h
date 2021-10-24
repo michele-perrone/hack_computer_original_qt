@@ -17,7 +17,6 @@ class Ticker : public QThread
 
     public:
         Ticker(HackComputer * hackComputer);
-        void tick();
 };
 
 #endif // TICKER_H

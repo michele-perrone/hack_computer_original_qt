@@ -15,3 +15,13 @@ int Default::readBit(int index, int source)
     int mask = 0x1 << index;
     return (source & mask) >> index;
 }
+
+void Default::simpleWait(uint64_t totalNanoSeconds)
+{
+    //totalNanoSeconds = 1000000000; // Artificially make it 1 second
+    //qDebug(()totalNanoSeconds/1000000000);
+    uint32_t seconds = totalNanoSeconds/1000000000;
+    uint32_t nanoSeconds = totalNanoSeconds - seconds * 1000000000;
+    const struct timespec rqtp = {seconds, nanoSeconds};
+    nanosleep(&rqtp, NULL);
+}

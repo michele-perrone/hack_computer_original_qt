@@ -7,6 +7,7 @@
 
 #include <QString>
 #include <iostream>
+#include <qgraphicsscene.h>
 
 class HackComputer
 {

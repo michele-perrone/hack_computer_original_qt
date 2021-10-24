@@ -2,6 +2,7 @@
 
 #include <QFile>
 #include <QTextStream>
+#include <qdebug.h>
 
 HackComputer::HackComputer()
 {
@@ -36,12 +37,14 @@ void HackComputer::preload(QString programName)
     QFile file("programs/" + programName + ".hack");
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
     {
-        std::cout << "Program file not found!" << std::endl;
+        qDebug() << "programs/" + programName + ".hack";
+        qDebug() << "Program file not found!";
         exit(EXIT_FAILURE);
     }
     QTextStream in(&file);
     for (int i=0; !in.atEnd(); i++) {
         int line = in.readLine().toInt(NULL, 2);
+        //qDebug() << line;
         rom->rom[i] = line;
     }
 }

@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/hack_computer_original_qt_autogen.dir/AutogenUsed.txt"
+  "CMakeFiles/hack_computer_original_qt_autogen.dir/ParseCache.txt"
+  "hack_computer_original_qt_autogen"
+  "CMakeFiles/hack_computer_original_qt.dir/cpu/alu.cpp.o"
+  "CMakeFiles/hack_computer_original_qt.dir/cpu/alu.cpp.o.d"
+  "CMakeFiles/hack_computer_original_qt.dir/cpu/cpu.cpp.o"
+  "CMakeFiles/hack_computer_original_qt.dir/cpu/cpu.cpp.o.d"
+  "CMakeFiles/hack_computer_original_qt.dir/cpu/pc.cpp.o"
+  "CMakeFiles/hack_computer_original_qt.dir/cpu/pc.cpp.o.d"
+  "CMakeFiles/hack_computer_original_qt.dir/cpu/pccontroller.cpp.o"
+  "CMakeFiles/hack_computer_original_qt.dir/cpu/pccontroller.cpp.o.d"
+  "CMakeFiles/hack_computer_original_qt.dir/drawer.cpp.o"
+  "CMakeFiles/hack_computer_original_qt.dir/drawer.cpp.o.d"
+  "CMakeFiles/hack_computer_original_qt.dir/hack_computer_original_qt_autogen/mocs_compilation.cpp.o"
+  "CMakeFiles/hack_computer_original_qt.dir/hack_computer_original_qt_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/hack_computer_original_qt.dir/hackcomputer.cpp.o"
+  "CMakeFiles/hack_computer_original_qt.dir/hackcomputer.cpp.o.d"
+  "CMakeFiles/hack_computer_original_qt.dir/hackcomputerqt.cpp.o"
+  "CMakeFiles/hack_computer_original_qt.dir/hackcomputerqt.cpp.o.d"
+  "CMakeFiles/hack_computer_original_qt.dir/main.cpp.o"
+  "CMakeFiles/hack_computer_original_qt.dir/main.cpp.o.d"
+  "CMakeFiles/hack_computer_original_qt.dir/ram.cpp.o"
+  "CMakeFiles/hack_computer_original_qt.dir/ram.cpp.o.d"
+  "CMakeFiles/hack_computer_original_qt.dir/rom.cpp.o"
+  "CMakeFiles/hack_computer_original_qt.dir/rom.cpp.o.d"
+  "CMakeFiles/hack_computer_original_qt.dir/ticker.cpp.o"
+  "CMakeFiles/hack_computer_original_qt.dir/ticker.cpp.o.d"
+  "CMakeFiles/hack_computer_original_qt.dir/utility/default.cpp.o"
+  "CMakeFiles/hack_computer_original_qt.dir/utility/default.cpp.o.d"
+  "CMakeFiles/hack_computer_original_qt.dir/utility/instruction.cpp.o"
+  "CMakeFiles/hack_computer_original_qt.dir/utility/instruction.cpp.o.d"
+  "hack_computer_original_qt"
+  "hack_computer_original_qt.pdb"
+  "hack_computer_original_qt_en_GB.ts"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/hack_computer_original_qt.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

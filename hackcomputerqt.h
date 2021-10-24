@@ -23,8 +23,6 @@ class HackComputerQt : public QMainWindow
 public:
     HackComputerQt(QWidget *parent = nullptr);
     ~HackComputerQt();
-    static void simpleWait(int nanoSeconds);
-
 private:
     Ui::HackComputerQt *ui;
     HackComputer * hackComputer;

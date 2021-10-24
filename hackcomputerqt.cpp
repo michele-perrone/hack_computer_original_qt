@@ -14,7 +14,8 @@ HackComputerQt::HackComputerQt(QWidget *parent)
 
     // Prepare the simulator
     hackComputer = new HackComputer();
-    hackComputer->preload("Pong");
+    hackComputer->preload("Rect");
+    hackComputer->ram->ram[0] = 120;
 
     // Create and start the threads
     ticker = new Ticker(hackComputer);
@@ -23,7 +24,7 @@ HackComputerQt::HackComputerQt(QWidget *parent)
     ticker->start();
     drawer->start();
 
-    std::cout << "I am alive #1" << std::endl;
+    qDebug() << "I am alive #1";
 }
 
 HackComputerQt::~HackComputerQt()
@@ -33,13 +34,4 @@ HackComputerQt::~HackComputerQt()
     delete ui;
 }
 
-void HackComputerQt::simpleWait(int totalNanoSeconds)
-{
-    //totalNanoSeconds = 1000000000; // Artificially make it 1 second
-    //qDebug(()totalNanoSeconds/1000000000);
-    int seconds = totalNanoSeconds/1000000000;
-    int nanoSeconds = totalNanoSeconds - seconds * 1000000000;
-    const struct timespec rqtp = {seconds, nanoSeconds};
-    nanosleep(&rqtp, NULL);
-}
 
