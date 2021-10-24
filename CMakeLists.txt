@@ -43,6 +43,8 @@ set(PROJECT_SOURCES
         rom.cpp
         hackcomputer.h
         hackcomputer.cpp
+        test.h
+        test.cpp
         ${TS_FILES}
 )
 

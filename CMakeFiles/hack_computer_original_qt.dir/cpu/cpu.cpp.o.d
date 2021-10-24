@@ -230,4 +230,42 @@ CMakeFiles/hack_computer_original_qt.dir/cpu/cpu.cpp.o: \
  /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/cpu/pc.h \
  /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/cpu/pccontroller.h \
  /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/utility/instruction.h \
- /usr/include/qt6/QtCore/QString /usr/include/qt6/QtCore/qstring.h
+ /usr/include/qt6/QtCore/QString /usr/include/qt6/QtCore/qstring.h \
+ /usr/include/qt6/QtCore/qdebug.h /usr/include/qt6/QtCore/qhash.h \
+ /usr/include/qt6/QtCore/qmath.h /usr/include/qt6/QtCore/qmap.h \
+ /usr/include/qt6/QtCore/qshareddata.h \
+ /usr/include/qt6/QtCore/qshareddata_impl.h /usr/include/c++/11.1.0/map \
+ /usr/include/c++/11.1.0/bits/stl_tree.h \
+ /usr/include/c++/11.1.0/bits/stl_map.h \
+ /usr/include/c++/11.1.0/bits/stl_multimap.h \
+ /usr/include/qt6/QtCore/qtextstream.h \
+ /usr/include/qt6/QtCore/qiodevicebase.h \
+ /usr/include/qt6/QtCore/qscopedpointer.h \
+ /usr/include/qt6/QtCore/qstringconverter.h \
+ /usr/include/qt6/QtCore/qset.h \
+ /usr/include/qt6/QtCore/qcontiguouscache.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed/limits.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/bits/uio_lim.h /usr/include/qt6/QtCore/qsharedpointer.h \
+ /usr/include/qt6/QtCore/qsharedpointer_impl.h \
+ /usr/include/qt6/QtCore/qobject.h /usr/include/qt6/QtCore/qobjectdefs.h \
+ /usr/include/qt6/QtCore/qobjectdefs_impl.h \
+ /usr/include/qt6/QtCore/qmetatype.h /usr/include/qt6/QtCore/qcompare.h \
+ /usr/include/qt6/QtCore/qvarlengtharray.h \
+ /usr/include/qt6/QtCore/qscopeguard.h \
+ /usr/include/qt6/QtCore/qdatastream.h \
+ /usr/include/qt6/QtCore/qiterable.h \
+ /usr/include/qt6/QtCore/qmetacontainer.h \
+ /usr/include/qt6/QtCore/qcontainerinfo.h \
+ /usr/include/qt6/QtCore/qtaggedpointer.h /usr/include/c++/11.1.0/list \
+ /usr/include/c++/11.1.0/bits/stl_list.h \
+ /usr/include/c++/11.1.0/bits/list.tcc \
+ /usr/include/qt6/QtCore/qobject_impl.h \
+ /usr/include/qt6/QtCore/qproperty.h \
+ /usr/include/qt6/QtCore/qpropertyprivate.h \
+ /usr/include/c++/11.1.0/experimental/source_location \
+ /usr/include/c++/11.1.0/chrono /usr/include/c++/11.1.0/ratio \
+ /usr/include/c++/11.1.0/ctime

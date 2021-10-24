@@ -327,5 +327,8 @@ CMakeFiles/hack_computer_original_qt.dir/hack_computer_original_qt_autogen/mocs_
  /usr/include/qt6/QtCore/qcontiguouscache.h \
  /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/hack_computer_original_qt_autogen/EWIEGA46WW/../../ticker.h \
  /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/hack_computer_original_qt_autogen/EWIEGA46WW/../../drawer.h \
+ /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/hack_computer_original_qt_autogen/EWIEGA46WW/../../test.h \
+ /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/cpu/pccontroller.h \
+ /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/utility/instruction.h \
  /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/hack_computer_original_qt_autogen/EWIEGA46WW/moc_ticker.cpp \
  /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/hack_computer_original_qt_autogen/EWIEGA46WW/../../ticker.h

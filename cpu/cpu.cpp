@@ -1,6 +1,7 @@
 #include "cpu.h"
 
 #include "utility/instruction.h"
+#include <qdebug.h>
 
 CPU::CPU()
 {
@@ -47,10 +48,10 @@ QVector<QVector<int>> CPU::output(int inM, int instruction, int reset)
 
     // outM
     x = registerD;
-    y = inst->a==1 ? inM : addressM;
+    y = ((inst->a)==1) ? inM : addressM;
 
     // ALU
-    int onlyC = inst->a==1 ? inst->comp-(1<<6) : inst->comp;
+    int onlyC = ((inst->a)==1) ? (inst->comp)-(1<<6) : inst->comp;
     QVector<int> outALU = alu->output(x, y, onlyC);
     outAlu = outALU[0];
     zr = outALU[1];

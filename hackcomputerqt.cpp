@@ -3,6 +3,7 @@
 
 #include <iostream>
 
+
 HackComputerQt::HackComputerQt(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::HackComputerQt)
@@ -11,6 +12,10 @@ HackComputerQt::HackComputerQt(QWidget *parent)
     ui->setupUi(this);
     scene = new QGraphicsScene(this);
     ui->graphicsView->setScene(scene);
+
+    test = new Test();
+    test->pccTest();
+    test->intructionTest();
 
     // Prepare the simulator
     hackComputer = new HackComputer();
@@ -35,6 +40,7 @@ HackComputerQt::~HackComputerQt()
     delete ticker;
     delete drawer;
     delete ui;
+    delete test;
 }
 
 

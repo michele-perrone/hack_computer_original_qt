@@ -1,16 +1,12 @@
-CMakeFiles/hack_computer_original_qt.dir/ticker.cpp.o: \
- /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/ticker.cpp \
+CMakeFiles/hack_computer_original_qt.dir/test.cpp.o: \
+ /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/test.cpp \
  /usr/include/stdc-predef.h \
- /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/ticker.h \
- /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/hackcomputer.h \
- /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/cpu/cpu.h \
- /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/cpu/alu.h \
- /usr/include/qt6/QtCore/QVector /usr/include/qt6/QtCore/qvector.h \
- /usr/include/qt6/QtCore/qlist.h \
- /usr/include/qt6/QtCore/qarraydatapointer.h \
- /usr/include/qt6/QtCore/qarraydataops.h \
- /usr/include/qt6/QtCore/qarraydata.h /usr/include/qt6/QtCore/qpair.h \
- /usr/include/qt6/QtCore/qglobal.h /usr/include/c++/11.1.0/type_traits \
+ /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/test.h \
+ /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/cpu/pccontroller.h \
+ /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/utility/instruction.h \
+ /usr/include/qt6/QtCore/QString /usr/include/qt6/QtCore/qstring.h \
+ /usr/include/qt6/QtCore/qchar.h /usr/include/qt6/QtCore/qglobal.h \
+ /usr/include/c++/11.1.0/type_traits \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/os_defines.h \
  /usr/include/features.h /usr/include/sys/cdefs.h \
@@ -141,8 +137,16 @@ CMakeFiles/hack_computer_original_qt.dir/ticker.cpp.o: \
  /usr/include/c++/11.1.0/tr1/poly_hermite.tcc \
  /usr/include/c++/11.1.0/tr1/poly_laguerre.tcc \
  /usr/include/c++/11.1.0/tr1/riemann_zeta.tcc \
- /usr/include/qt6/QtCore/qversiontagging.h /usr/include/string.h \
- /usr/include/strings.h /usr/include/qt6/QtCore/qcontainertools_impl.h \
+ /usr/include/qt6/QtCore/qversiontagging.h \
+ /usr/include/qt6/QtCore/qstringview.h \
+ /usr/include/qt6/QtCore/qbytearray.h /usr/include/qt6/QtCore/qrefcount.h \
+ /usr/include/qt6/QtCore/qnamespace.h \
+ /usr/include/qt6/QtCore/qtmetamacros.h \
+ /usr/include/qt6/QtCore/qarraydata.h /usr/include/qt6/QtCore/qpair.h \
+ /usr/include/string.h /usr/include/strings.h \
+ /usr/include/qt6/QtCore/qarraydatapointer.h \
+ /usr/include/qt6/QtCore/qarraydataops.h \
+ /usr/include/qt6/QtCore/qcontainertools_impl.h \
  /usr/include/c++/11.1.0/cstring /usr/include/c++/11.1.0/iterator \
  /usr/include/c++/11.1.0/iosfwd /usr/include/c++/11.1.0/bits/stringfwd.h \
  /usr/include/c++/11.1.0/bits/postypes.h /usr/include/c++/11.1.0/cwchar \
@@ -207,12 +211,6 @@ CMakeFiles/hack_computer_original_qt.dir/ticker.cpp.o: \
  /usr/include/c++/11.1.0/bits/shared_ptr_atomic.h \
  /usr/include/c++/11.1.0/backward/auto_ptr.h \
  /usr/include/c++/11.1.0/pstl/glue_memory_defs.h \
- /usr/include/qt6/QtCore/qnamespace.h \
- /usr/include/qt6/QtCore/qtmetamacros.h \
- /usr/include/qt6/QtCore/qhashfunctions.h \
- /usr/include/qt6/QtCore/qstring.h /usr/include/qt6/QtCore/qchar.h \
- /usr/include/qt6/QtCore/qstringview.h \
- /usr/include/qt6/QtCore/qbytearray.h /usr/include/qt6/QtCore/qrefcount.h \
  /usr/include/qt6/QtCore/qbytearrayalgorithms.h \
  /usr/include/qt6/QtCore/qbytearrayview.h \
  /usr/include/c++/11.1.0/stdlib.h \
@@ -221,7 +219,9 @@ CMakeFiles/hack_computer_original_qt.dir/ticker.cpp.o: \
  /usr/include/qt6/QtCore/qanystringview.h \
  /usr/include/qt6/QtCore/qutf8stringview.h \
  /usr/include/qt6/QtCore/qstringtokenizer.h \
- /usr/include/c++/11.1.0/numeric \
+ /usr/include/qt6/QtCore/QVector /usr/include/qt6/QtCore/qvector.h \
+ /usr/include/qt6/QtCore/qlist.h /usr/include/qt6/QtCore/qhashfunctions.h \
+ /usr/include/qt6/QtCore/qstring.h /usr/include/c++/11.1.0/numeric \
  /usr/include/c++/11.1.0/bits/stl_numeric.h \
  /usr/include/c++/11.1.0/pstl/glue_numeric_defs.h \
  /usr/include/qt6/QtCore/qiterator.h \
@@ -229,100 +229,41 @@ CMakeFiles/hack_computer_original_qt.dir/ticker.cpp.o: \
  /usr/include/qt6/QtCore/qstringlist.h \
  /usr/include/qt6/QtCore/qalgorithms.h \
  /usr/include/qt6/QtCore/qstringmatcher.h \
- /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/cpu/pc.h \
- /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/cpu/pccontroller.h \
- /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/rom.h \
- /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/ram.h \
- /usr/include/qt6/QtCore/QString /usr/include/qt6/QtCore/qstring.h \
- /usr/include/c++/11.1.0/iostream /usr/include/c++/11.1.0/ostream \
- /usr/include/c++/11.1.0/ios /usr/include/c++/11.1.0/bits/basic_ios.h \
- /usr/include/c++/11.1.0/bits/locale_facets.h \
- /usr/include/c++/11.1.0/cwctype /usr/include/wctype.h \
- /usr/include/bits/wctype-wchar.h \
- /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/ctype_base.h \
- /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/ctype_inline.h \
- /usr/include/c++/11.1.0/bits/locale_facets.tcc \
- /usr/include/c++/11.1.0/bits/basic_ios.tcc \
- /usr/include/c++/11.1.0/bits/ostream.tcc /usr/include/c++/11.1.0/istream \
- /usr/include/c++/11.1.0/bits/istream.tcc \
- /usr/include/qt6/QtWidgets/qgraphicsscene.h \
- /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
- /usr/include/qt6/QtGui/qtguiglobal.h \
- /usr/include/qt6/QtGui/qtgui-config.h \
- /usr/include/qt6/QtWidgets/qtwidgets-config.h \
- /usr/include/qt6/QtCore/qobject.h /usr/include/qt6/QtCore/qobjectdefs.h \
- /usr/include/qt6/QtCore/qobjectdefs_impl.h \
- /usr/include/qt6/QtCore/qscopedpointer.h \
- /usr/include/qt6/QtCore/qmetatype.h /usr/include/qt6/QtCore/qcompare.h \
- /usr/include/qt6/QtCore/qvarlengtharray.h \
- /usr/include/qt6/QtCore/qscopeguard.h \
- /usr/include/qt6/QtCore/qdatastream.h \
- /usr/include/qt6/QtCore/qiodevicebase.h \
- /usr/include/qt6/QtCore/qiterable.h \
- /usr/include/qt6/QtCore/qmetacontainer.h \
- /usr/include/qt6/QtCore/qcontainerinfo.h \
- /usr/include/qt6/QtCore/qtaggedpointer.h /usr/include/qt6/QtCore/qmath.h \
- /usr/include/c++/11.1.0/list /usr/include/c++/11.1.0/bits/stl_list.h \
- /usr/include/c++/11.1.0/bits/list.tcc /usr/include/c++/11.1.0/map \
+ /usr/include/qt6/QtCore/qstring.h /usr/include/qt6/QtCore/qdebug.h \
+ /usr/include/qt6/QtCore/qhash.h /usr/include/qt6/QtCore/qmath.h \
+ /usr/include/qt6/QtCore/qmap.h /usr/include/qt6/QtCore/qshareddata.h \
+ /usr/include/qt6/QtCore/qshareddata_impl.h /usr/include/c++/11.1.0/map \
  /usr/include/c++/11.1.0/bits/stl_tree.h \
  /usr/include/c++/11.1.0/bits/stl_map.h \
  /usr/include/c++/11.1.0/bits/stl_multimap.h \
- /usr/include/qt6/QtCore/qobject_impl.h \
- /usr/include/qt6/QtCore/qproperty.h \
- /usr/include/qt6/QtCore/qshareddata.h \
- /usr/include/qt6/QtCore/qpropertyprivate.h \
- /usr/include/c++/11.1.0/experimental/source_location \
- /usr/include/c++/11.1.0/chrono /usr/include/c++/11.1.0/ratio \
- /usr/include/c++/11.1.0/ctime /usr/include/qt6/QtCore/qpoint.h \
- /usr/include/qt6/QtCore/qrect.h /usr/include/qt6/QtCore/qmargins.h \
- /usr/include/qt6/QtCore/qsize.h /usr/include/qt6/QtGui/qbrush.h \
- /usr/include/qt6/QtGui/qcolor.h /usr/include/qt6/QtGui/qrgb.h \
- /usr/include/qt6/QtGui/qrgba64.h \
+ /usr/include/qt6/QtCore/qtextstream.h \
+ /usr/include/qt6/QtCore/qiodevicebase.h \
+ /usr/include/qt6/QtCore/qscopedpointer.h \
+ /usr/include/qt6/QtCore/qstringconverter.h \
+ /usr/include/qt6/QtCore/qset.h \
+ /usr/include/qt6/QtCore/qcontiguouscache.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed/limits.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed/syslimits.h \
  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
  /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
- /usr/include/bits/uio_lim.h /usr/include/qt6/QtGui/qimage.h \
- /usr/include/qt6/QtGui/qpaintdevice.h \
- /usr/include/qt6/QtGui/qwindowdefs.h \
- /usr/include/qt6/QtGui/qpixelformat.h \
- /usr/include/qt6/QtGui/qtransform.h /usr/include/qt6/QtGui/qpolygon.h \
- /usr/include/qt6/QtGui/qregion.h /usr/include/qt6/QtCore/qline.h \
- /usr/include/qt6/QtGui/qpixmap.h \
- /usr/include/qt6/QtCore/qsharedpointer.h \
+ /usr/include/bits/uio_lim.h /usr/include/qt6/QtCore/qsharedpointer.h \
  /usr/include/qt6/QtCore/qsharedpointer_impl.h \
- /usr/include/qt6/QtGui/qfont.h /usr/include/qt6/QtGui/qpen.h \
- /usr/include/qt6/QtCore/QThread /usr/include/qt6/QtCore/qthread.h \
- /usr/include/qt6/QtCore/qdeadlinetimer.h \
- /usr/include/qt6/QtCore/qelapsedtimer.h /usr/include/c++/11.1.0/future \
- /usr/include/c++/11.1.0/mutex /usr/include/c++/11.1.0/bits/std_mutex.h \
- /usr/include/c++/11.1.0/bits/unique_lock.h \
- /usr/include/c++/11.1.0/condition_variable \
- /usr/include/c++/11.1.0/bits/atomic_futex.h \
- /usr/include/c++/11.1.0/bits/std_thread.h \
- /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/hackcomputerqt.h \
- /usr/include/qt6/QtWidgets/QMainWindow \
- /usr/include/qt6/QtWidgets/qmainwindow.h \
- /usr/include/qt6/QtWidgets/qwidget.h /usr/include/qt6/QtGui/qpalette.h \
- /usr/include/qt6/QtGui/qfontmetrics.h /usr/include/qt6/QtGui/qfontinfo.h \
- /usr/include/qt6/QtWidgets/qsizepolicy.h \
- /usr/include/qt6/QtGui/qcursor.h /usr/include/qt6/QtGui/qbitmap.h \
- /usr/include/qt6/QtGui/qkeysequence.h \
- /usr/include/qt6/QtWidgets/qtabwidget.h /usr/include/qt6/QtGui/qicon.h \
- /usr/include/qt6/QtGui/QPainter /usr/include/qt6/QtGui/qpainter.h \
- /usr/include/qt6/QtGui/qtextoption.h /usr/include/qt6/QtCore/QDebug \
- /usr/include/qt6/QtCore/qdebug.h /usr/include/qt6/QtCore/qhash.h \
- /usr/include/qt6/QtCore/qmap.h \
- /usr/include/qt6/QtCore/qshareddata_impl.h \
- /usr/include/qt6/QtCore/qtextstream.h \
- /usr/include/qt6/QtCore/qstringconverter.h \
- /usr/include/qt6/QtCore/qset.h \
- /usr/include/qt6/QtCore/qcontiguouscache.h \
- /usr/include/qt6/QtWidgets/QGraphicsScene \
- /usr/include/qt6/QtWidgets/qgraphicsscene.h \
- /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/drawer.h \
- /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/test.h \
- /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/cpu/pccontroller.h \
- /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/utility/instruction.h \
- /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/utility/default.h
+ /usr/include/qt6/QtCore/qobject.h /usr/include/qt6/QtCore/qobjectdefs.h \
+ /usr/include/qt6/QtCore/qobjectdefs_impl.h \
+ /usr/include/qt6/QtCore/qmetatype.h /usr/include/qt6/QtCore/qcompare.h \
+ /usr/include/qt6/QtCore/qvarlengtharray.h \
+ /usr/include/qt6/QtCore/qscopeguard.h \
+ /usr/include/qt6/QtCore/qdatastream.h \
+ /usr/include/qt6/QtCore/qiterable.h \
+ /usr/include/qt6/QtCore/qmetacontainer.h \
+ /usr/include/qt6/QtCore/qcontainerinfo.h \
+ /usr/include/qt6/QtCore/qtaggedpointer.h /usr/include/c++/11.1.0/list \
+ /usr/include/c++/11.1.0/bits/stl_list.h \
+ /usr/include/c++/11.1.0/bits/list.tcc \
+ /usr/include/qt6/QtCore/qobject_impl.h \
+ /usr/include/qt6/QtCore/qproperty.h \
+ /usr/include/qt6/QtCore/qpropertyprivate.h \
+ /usr/include/c++/11.1.0/experimental/source_location \
+ /usr/include/c++/11.1.0/chrono /usr/include/c++/11.1.0/ratio \
+ /usr/include/c++/11.1.0/ctime

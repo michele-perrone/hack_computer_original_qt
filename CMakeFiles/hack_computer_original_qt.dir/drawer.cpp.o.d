@@ -322,5 +322,8 @@ CMakeFiles/hack_computer_original_qt.dir/drawer.cpp.o: \
  /usr/include/qt6/QtCore/qset.h \
  /usr/include/qt6/QtCore/qcontiguouscache.h \
  /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/ticker.h \
+ /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/test.h \
+ /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/cpu/pccontroller.h \
+ /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/utility/instruction.h \
  /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/utility/default.h \
  /usr/include/qt6/QtGui/qpixmap.h

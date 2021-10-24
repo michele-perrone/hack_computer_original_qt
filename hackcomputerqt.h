@@ -11,6 +11,7 @@
 #include "ticker.h"
 #include "drawer.h"
 #include "hackcomputer.h"
+#include "test.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class HackComputerQt; }
@@ -34,5 +35,6 @@ private:
     Ticker * ticker;
     Drawer * drawer;
     QGraphicsScene * scene;
+    Test * test;
 };
 #endif // HACKCOMPUTERQT_H

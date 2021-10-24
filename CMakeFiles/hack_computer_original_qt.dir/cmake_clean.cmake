@@ -24,6 +24,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/hack_computer_original_qt.dir/ram.cpp.o.d"
   "CMakeFiles/hack_computer_original_qt.dir/rom.cpp.o"
   "CMakeFiles/hack_computer_original_qt.dir/rom.cpp.o.d"
+  "CMakeFiles/hack_computer_original_qt.dir/test.cpp.o"
+  "CMakeFiles/hack_computer_original_qt.dir/test.cpp.o.d"
   "CMakeFiles/hack_computer_original_qt.dir/ticker.cpp.o"
   "CMakeFiles/hack_computer_original_qt.dir/ticker.cpp.o.d"
   "CMakeFiles/hack_computer_original_qt.dir/utility/default.cpp.o"

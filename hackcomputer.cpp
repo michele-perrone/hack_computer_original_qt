@@ -30,6 +30,7 @@ void HackComputer::cycle()
     pc = cpuOut[1][3];
     inM = ram->output(outM, writeM, addressM);
     instruction = rom->output(pc);
+    //qDebug() << instruction;
 }
 
 void HackComputer::preload(QString programName)

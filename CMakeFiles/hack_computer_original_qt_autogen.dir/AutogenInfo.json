@@ -305,6 +305,12 @@
 			null
 		],
 		[
+			"/home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/test.h",
+			"MU",
+			"EWIEGA46WW/moc_test.cpp",
+			null
+		],
+		[
 			"/home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/ticker.h",
 			"MU",
 			"EWIEGA46WW/moc_ticker.cpp",
@@ -421,6 +427,11 @@
 		],
 		[
 			"/home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/rom.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/test.cpp",
 			"MU",
 			null
 		],

@@ -8,7 +8,9 @@
   /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/hackcomputer.h \
   /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/ram.h \
   /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/rom.h \
+  /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/test.h \
   /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/ticker.h \
+  /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/utility/instruction.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

@@ -1,6 +1,8 @@
 #include "ram.h"
 #include "utility/default.h"
 
+#include <qdebug.h>
+
 RAM::RAM()
 {
     ram = QVector<int>(Default::RAM_length + Default::SCREEN_length + 1);

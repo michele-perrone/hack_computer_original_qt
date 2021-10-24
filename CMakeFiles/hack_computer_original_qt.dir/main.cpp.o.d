@@ -321,6 +321,9 @@ CMakeFiles/hack_computer_original_qt.dir/main.cpp.o: \
  /usr/include/c++/11.1.0/bits/atomic_futex.h \
  /usr/include/c++/11.1.0/bits/std_thread.h \
  /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/drawer.h \
+ /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/test.h \
+ /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/cpu/pccontroller.h \
+ /home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/utility/instruction.h \
  /usr/include/qt6/QtWidgets/QApplication \
  /usr/include/qt6/QtWidgets/qapplication.h \
  /usr/include/qt6/QtCore/qcoreapplication.h \
