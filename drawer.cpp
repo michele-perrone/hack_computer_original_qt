@@ -7,7 +7,7 @@ void Drawer::run()
 {
     while(true) {
         draw();
-        HackComputerQt::simpleWait((int) 1000000000/Default::FPS);
+        HackComputerQt::simpleWait((uint32_t) 1000000000/Default::FPS);
     }
 }
 
@@ -28,5 +28,6 @@ void Drawer::draw()
       }
     }
 
-    scene->addPixmap(QPixmap::fromImage(img));
+    emit pixmapUpdated(QPixmap::fromImage(img));
+    //scene->addPixmap(QPixmap::fromImage(img));
 }

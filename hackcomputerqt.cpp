@@ -14,11 +14,15 @@ HackComputerQt::HackComputerQt(QWidget *parent)
 
     // Prepare the simulator
     hackComputer = new HackComputer();
-    hackComputer->preload("Pong");
+    hackComputer->preload("Rect");
+    hackComputer->ram->ram[0] = 120;
 
     // Create and start the threads
     ticker = new Ticker(hackComputer);
     drawer = new Drawer(scene, hackComputer);
+
+    QObject::connect(drawer, &Drawer::pixmapUpdated,
+                     this, &HackComputerQt::updateScene);
 
     ticker->start();
     drawer->start();
@@ -33,13 +37,18 @@ HackComputerQt::~HackComputerQt()
     delete ui;
 }
 
-void HackComputerQt::simpleWait(int totalNanoSeconds)
+void HackComputerQt::simpleWait(uint32_t totalNanoSeconds)
 {
     //totalNanoSeconds = 1000000000; // Artificially make it 1 second
     //qDebug(()totalNanoSeconds/1000000000);
-    int seconds = totalNanoSeconds/1000000000;
-    int nanoSeconds = totalNanoSeconds - seconds * 1000000000;
+    uint32_t seconds = totalNanoSeconds/1000000000;
+    uint32_t nanoSeconds = totalNanoSeconds - seconds * 1000000000;
     const struct timespec rqtp = {seconds, nanoSeconds};
     nanosleep(&rqtp, NULL);
+}
+
+void HackComputerQt::updateScene(QPixmap pixmap)
+{
+    scene->addPixmap(pixmap);
 }
 
