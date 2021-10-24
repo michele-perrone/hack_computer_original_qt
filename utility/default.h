@@ -14,7 +14,7 @@ namespace Default
     const int SCREEN_length = 8192; // 2^13
     const int SCREEN_address = 16384;
     const int KBD_address = 24576;
-    constexpr double MHZ = 0.001;
+    constexpr double MHZ = 1;
 
     int complement2_16(int value);
     int negate(int n);

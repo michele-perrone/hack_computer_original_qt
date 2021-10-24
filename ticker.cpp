@@ -9,6 +9,7 @@ void Ticker::run()
     while(true) {
         hackComputer->cycle();
         Default::simpleWait( (uint64_t) 1000000000/(Default::MHZ*1000000));
+        //qDebug() << "Tick";
     }
 }
 
