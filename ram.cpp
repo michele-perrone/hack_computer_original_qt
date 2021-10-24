@@ -3,7 +3,7 @@
 
 RAM::RAM()
 {
-    ram = new int[Default::RAM_length + Default::SCREEN_length + 1];
+    ram = QVector<int>(Default::RAM_length + Default::SCREEN_length + 1);
 }
 
 int RAM::output(int in, int load, int address)
@@ -15,17 +15,15 @@ int RAM::output(int in, int load, int address)
 }
 
 void RAM::wipe(){
-    ram = new int[Default::RAM_length + Default::SCREEN_length + 1];
+    ram = QVector<int>(Default::RAM_length + Default::SCREEN_length + 1);
 }
 
 void RAM::write_word(int word, int value) {
-  ram[word] = value;
+    ram[word] = value;
 }
 
-void RAM::load(int * initialRAM) {
-  for(int i=0; i<sizeof(initialRAM)/4; i++) {
-    ram[i] = initialRAM[i];
-  }
+void RAM::load(QVector<int> initialRAM) {
+    ram = initialRAM;
 }
 
 int RAM::read_KBD() {

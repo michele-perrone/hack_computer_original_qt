@@ -1,5 +1,5 @@
 #include "alu.h"
-#include "default.h"
+#include "utility/default.h"
 
 ALU::ALU()
 {
@@ -12,7 +12,7 @@ ALU::~ALU()
 {
 }
 
-int * ALU::output(int x, int y, int comp) {
+QVector <int> ALU::output(int x, int y, int comp) {
     switch(comp) {
       case 0x2a: out = 0; break;
 
@@ -50,7 +50,7 @@ int * ALU::output(int x, int y, int comp) {
 
       case 0x15: out = x|y; break;
 
-      default: return new int[3];
+      default: return QVector<int>(3);
     }
 
     // Calculate 2-complement (in case out<0)
@@ -63,7 +63,7 @@ int * ALU::output(int x, int y, int comp) {
     if (out==0) zr=1;
     if (out>0x8000) ng=1;
 
-    int * completeOut = new int[3] {
+    QVector <int> completeOut = {
             out,
             zr,
             ng

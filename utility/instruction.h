@@ -1,7 +1,8 @@
 #ifndef INSTRUCTION_H
 #define INSTRUCTION_H
 
-#include "qstring.h"
+#include <QString>
+#include <QVector>
 
 class Instruction
 {
@@ -14,7 +15,7 @@ public:
     int a_address(), c_comp(), c_dest(), c_jump();
     bool inst_opcode();
     int c_a(), c_c1(), c_c2(), c_c3(), c_c4(), c_c5(), c_c6(), c_d1(), c_d2(), c_d3(), c_j1(), c_j2(), c_j3();
-    int * all();
+    QVector<int> all();
 };
 
 #endif // INSTRUCTION_H

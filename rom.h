@@ -1,14 +1,15 @@
 #ifndef ROM_H
 #define ROM_H
 
+#include <QVector>
 
 class ROM
 {
 public:
     ROM();
-    int * rom;
+    QVector<int> rom;
     int output(int address);
-    void flash(int * rom);
+    void flash(QVector<int> rom);
     void wipe();
 };
 

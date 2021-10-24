@@ -3,13 +3,14 @@
 
 #include <QMainWindow>
 #include <QPainter>
-#include <time.h>
-#include <thread>
 #include <QDebug>
-#include <ticker.h>
-#include <drawer.h>
-#include <qgraphicsscene.h>
-#include <hackcomputer.h>
+#include <QGraphicsScene>
+
+#include <time.h>
+
+#include "ticker.h"
+#include "drawer.h"
+#include "hackcomputer.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class HackComputerQt; }

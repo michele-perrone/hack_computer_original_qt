@@ -4,7 +4,9 @@
 #include "cpu/cpu.h"
 #include "rom.h"
 #include "ram.h"
-#include "qstring.h"
+
+#include <QString>
+#include <iostream>
 
 class HackComputer
 {
@@ -18,7 +20,7 @@ public:
     int inM = 0, instruction = 0, reset = 0, outM = 0, writeM = 0, addressM = 0, pc = 0;
     void cycle();
     void preload(QString programName);
-    void initializeRam(int * newRam);
+    void initializeRam(QVector<int> newRam);
 };
 
 #endif // HACKCOMPUTER_H

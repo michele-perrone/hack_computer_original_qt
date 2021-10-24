@@ -41,6 +41,11 @@ bool Instruction::is_c()
     return instruction >= 0xe000;
 }
 
+int Instruction::a_address() {
+    if(is_a()) return instruction;
+    else return -1;
+  }
+
 int Instruction::c_comp() {
   int mask = 0x7f << 6;
   return ( instruction & mask ) >> 6;
@@ -113,9 +118,9 @@ int Instruction::c_j3() {
     return Default::readBit(0, c_jump());
 }
 
-int *Instruction::all()
+QVector<int> Instruction::all()
 {
-    int * allRegisters = new int[] {
+    QVector<int> allRegisters = {
       j3,
       j2,
       j1,
