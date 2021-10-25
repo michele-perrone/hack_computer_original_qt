@@ -26,8 +26,8 @@ HackComputerQt::HackComputerQt(QWidget *parent)
 
     // Prepare the simulator
     hackComputer = new HackComputer();
-    hackComputer->preload("Rect");
-    hackComputer->ram->ram[0] = 120;
+    hackComputer->preload("Pong");
+    //hackComputer->ram->ram[0] = 220;
 
     // Create and start the threads
     ticker = new Ticker(hackComputer);
