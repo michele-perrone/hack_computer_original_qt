@@ -1,4 +1,0 @@
-/home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/CMakeFiles/rebuild_cache.dir
-/home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/CMakeFiles/edit_cache.dir
-/home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/CMakeFiles/hack_computer_original_qt.dir
-/home/magiwanders/OneDrive/SelfStudy/ComputerArchitecture/hack_computer_original_qt/CMakeFiles/hack_computer_original_qt_autogen.dir
