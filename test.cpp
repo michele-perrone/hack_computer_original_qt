@@ -592,7 +592,7 @@ void Test::cpuTest()
         }
 
          //To test only one output
-         if (i>=0 && i<0) {
+         if (i>=0 && i<10) {
 
            if (currentTestResults[0][0] == outM[i]) {qDebug("ok");} else { if(outM[i]==0x0) {qDebug("ok");} else {qDebug("fail");}}
            if (currentTestResults[1][0] == outM[i+1]) {qDebug("ok");} else { if(outM[i+1]==0x0) { qDebug("ok");} else { qDebug("fail");}}
