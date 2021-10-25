@@ -3,6 +3,9 @@
 
 #include <cpu/pccontroller.h>
 #include <utility/instruction.h>
+#include "ram.h"
+#include "utility/default.h"
+#include <QDebug>
 
 class Test
 {
@@ -11,6 +14,7 @@ public:
     void pccTest();
     void intructionTest();
     void cpuTest();
+    void RAMTest();
 };
 
 #endif // TEST_H
