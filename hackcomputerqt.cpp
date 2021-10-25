@@ -17,6 +17,7 @@ HackComputerQt::HackComputerQt(QWidget *parent)
     test->pccTest();
     test->intructionTest();
     test->cpuTest();
+    test->aluTest();
 
     // Prepare the simulator
     hackComputer = new HackComputer();

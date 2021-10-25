@@ -11,6 +11,7 @@ public:
     void pccTest();
     void intructionTest();
     void cpuTest();
+    void aluTest();
 };
 
 #endif // TEST_H

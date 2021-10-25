@@ -249,7 +249,7 @@ void Test::intructionTest()
 
 void Test::cpuTest()
 {
-    CPU * cpu = new CPU();
+    CPU cpu;
 
     int instruction[] = {
       0x3039,
@@ -300,6 +300,8 @@ void Test::cpuTest()
       0x7fff
     };
 
+    int minusOne = Default::complement2_16(-1);
+
     int outM[] = {
       0x0,
       0x0,
@@ -316,7 +318,7 @@ void Test::cpuTest()
       0x0,
       0x0,
       0x0,
-      -1,
+      minusOne,
       0x0,
       0x0,
       0x0,
@@ -400,8 +402,6 @@ void Test::cpuTest()
       1000,
       32767
     };
-
-    int minusOne = Default::complement2_16(-1);
 
     int registerD[] = {
       0,
@@ -561,7 +561,7 @@ void Test::cpuTest()
       for (int i=0; i<nTests; i++) {
         QString outString;
 
-        QVector<QVector<int>> currentTestResults = cpu->output(inM[i], instruction[i], reset[i]);
+        QVector<QVector<int>> currentTestResults = cpu.output(inM[i], instruction[i], reset[i]);
 
         if(outM[i]==0x0 || outM[i+1]==0x0) {
           if (
@@ -623,4 +623,196 @@ void Test::cpuTest()
 
       qDebug() << "Completed " << nTests << " functionality tests of which " << failed << " failed.";
       qDebug() << "*** CPU Functionality Test End ***";
+}
+
+void Test::aluTest()
+{
+    ALU alu;
+
+    int x[] = {
+      0x0000,
+      0x0000,
+      0x0000,
+      0x0000,
+      0x0000,
+      0x0000,
+      0x0000,
+      0x0000,
+      0x0000,
+      0x0000,
+      0x0000,
+      0x0000,
+      0x0000,
+      0x0000,
+      0x0000,
+      0x0000,
+      0x0000,
+      0x0000,
+      0x0011,
+      0x0011,
+      0x0011,
+      0x0011,
+      0x0011,
+      0x0011,
+      0x0011,
+      0x0011,
+      0x0011,
+      0x0011,
+      0x0011,
+      0x0011,
+      0x0011,
+      0x0011,
+      0x0011,
+      0x0011,
+      0x0011,
+      0x0011
+    };
+
+    int y[] = {
+      0xffff,
+      0xffff,
+      0xffff,
+      0xffff,
+      0xffff,
+      0xffff,
+      0xffff,
+      0xffff,
+      0xffff,
+      0xffff,
+      0xffff,
+      0xffff,
+      0xffff,
+      0xffff,
+      0xffff,
+      0xffff,
+      0xffff,
+      0xffff,
+      0x0003,
+      0x0003,
+      0x0003,
+      0x0003,
+      0x0003,
+      0x0003,
+      0x0003,
+      0x0003,
+      0x0003,
+      0x0003,
+      0x0003,
+      0x0003,
+      0x0003,
+      0x0003,
+      0x0003,
+      0x0003,
+      0x0003,
+      0x0003
+    };
+
+    int comp[] = {
+      0x002a,
+      0x003f,
+      0x003a,
+      0x000c,
+      0x0030,
+      0x000d,
+      0x0031,
+      0x000f,
+      0x0033,
+      0x001f,
+      0x0037,
+      0x000e,
+      0x0032,
+      0x0002,
+      0x0013,
+      0x0007,
+      0x0000,
+      0x0015,
+      0x002a,
+      0x003f,
+      0x003a,
+      0x000c,
+      0x0030,
+      0x000d,
+      0x0031,
+      0x000f,
+      0x0033,
+      0x001f,
+      0x0037,
+      0x000e,
+      0x0032,
+      0x0002,
+      0x0013,
+      0x0007,
+      0x0000,
+      0x0015
+    };
+
+    int out[] = {
+      0x0000,
+      0x0001,
+      0xffff,
+      0x0000,
+      0xffff,
+      0xffff,
+      0x0000,
+      0x0000,
+      0x0001,
+      0x0001,
+      0x0000,
+      0xffff,
+      0xfffe,
+      0xffff,
+      0x0001,
+      0xffff,
+      0x0000,
+      0xffff,
+      0x0000,
+      0x0001,
+      0xffff,
+      0x0011,
+      0x0003,
+      0xffee,
+      0xfffc,
+      0xffef,
+      0xfffd,
+      0x0012,
+      0x0004,
+      0x0010,
+      0x0002,
+      0x0014,
+      0x000e,
+      0xfff2,
+      0x0001,
+      0x0013
+    };
+
+    int zr[] = {1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+    int ng[] = {0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0};
+
+    int nTests = sizeof(x)/4, failed=0;
+      qDebug() << "***** ALU TEST START ******";
+
+      for (int i=0; i<nTests; i++) {
+        QString outString;
+
+        QVector<int> currentTestResults = alu.output(x[i], y[i], comp[i]);
+
+        if (currentTestResults[0] == out[i] && currentTestResults[1] == zr[i] && currentTestResults[2] == ng[i] ) {
+          outString = "Passed";
+        } else {
+          outString = "Failed";
+          failed++;
+        }
+
+         //To test only one output
+         if (i>=0) {
+           qDebug() << "x=" << x[i] << " y=" << y[i] << " comp=" << comp[i];
+           qDebug() << "out: obtained " << currentTestResults[0] << " <=> " << out[i] << " expected";
+           qDebug() << "zr : obtained " << currentTestResults[1] << " <=> " << zr[i] << " expected";
+           qDebug() << "ng : obtained " << currentTestResults[2] << " <=> " << ng[i] << " expected";
+         }
+
+        qDebug() << "ALU Test " << (i+1) << ": " << outString;
+      }
+
+      qDebug() << "Completed " << nTests << " functionality tests of which " << failed << " failed.";
 }
