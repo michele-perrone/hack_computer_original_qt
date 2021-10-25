@@ -1,3 +1,0 @@
-# Hashes of file build rules.
-73659b8e5ebed39a0286ed5db85cc0ea CMakeFiles/hack_computer_original_qt_autogen
-63d5d7f53e3c5f79fef9fb08fe46c0dc hack_computer_original_qt_en_GB.ts
