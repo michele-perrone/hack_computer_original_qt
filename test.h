@@ -10,6 +10,7 @@ public:
     Test();
     void pccTest();
     void intructionTest();
+    void cpuTest();
 };
 
 #endif // TEST_H
