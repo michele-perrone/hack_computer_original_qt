@@ -1,5 +1,6 @@
 #include "alu.h"
 #include "utility/default.h"
+#include <qdebug.h>
 
 ALU::ALU()
 {
@@ -13,6 +14,11 @@ ALU::~ALU()
 }
 
 QVector <int> ALU::output(int x, int y, int comp) {
+
+    out=0;
+    zr=0;
+    ng=0;
+
     switch(comp) {
       case 0x2a: out = 0; break;
 
