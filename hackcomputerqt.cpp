@@ -18,16 +18,12 @@ HackComputerQt::HackComputerQt(QWidget *parent)
 //    test->intructionTest();
 //    test->cpuTest();
 //    test->aluTest();
-    test->pccTest();
-    test->intructionTest();
-    test->cpuTest();
-    test->RAMTest();
     delete test;
 
     // Prepare the simulator
     hackComputer = new HackComputer();
-    hackComputer->preload("Pong");
-    //hackComputer->ram->ram[0] = 220;
+    hackComputer->preload("Rect");
+    hackComputer->ram->ram[0] = 120;
 
     // Create and start the threads
     ticker = new Ticker(hackComputer);
