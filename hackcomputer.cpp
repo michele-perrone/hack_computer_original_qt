@@ -20,6 +20,13 @@ HackComputer::~HackComputer()
 
 void HackComputer::cycle()
 {
+    qDebug() << "-----------------------";
+    qDebug() << "pc = " << pc;
+    qDebug() << "regA = " << cpu->registerA;
+    qDebug() << "writeM = " << cpu->writeM;
+    qDebug() << "regD = " << cpu->registerD;
+    //qDebug() << ram->ram[0];
+
     addressM = cpu->registerA;
     inM = ram->output(0, 0, addressM);
     cpuOut = cpu->output(inM, instruction, reset);
@@ -30,12 +37,6 @@ void HackComputer::cycle()
     pc = cpuOut[1][3];
     inM = ram->output(outM, writeM, addressM);
     instruction = rom->output(pc);
-    qDebug() << "-----------------------";
-    qDebug() << pc;
-    qDebug() << cpu->registerA;
-    qDebug() << cpu->writeM;
-    qDebug() << cpu->registerD;
-    qDebug() << ram->ram[0];
 }
 
 void HackComputer::preload(QString programName)
