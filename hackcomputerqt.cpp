@@ -14,10 +14,10 @@ HackComputerQt::HackComputerQt(QWidget *parent)
     ui->graphicsView->setScene(scene);
 
     test = new Test();
-//    test->pccTest();
-//    test->intructionTest();
-//    test->cpuTest();
-//    test->aluTest();
+    test->pccTest();
+    test->intructionTest();
+    test->cpuTest();
+    test->aluTest();
 
     // Prepare the simulator
     hackComputer = new HackComputer();
